@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 import pickle
 
-with open('final_model1_xgb(1).pkl','rb') as file:
+with open('final_model1_xgb.pkl','rb') as file:
     model = pickle.load(file)
-with open('transformer(1).pkl','rb') as file:
+with open('transformer.pkl','rb') as file:
     pt = pickle.load(file)
 def prediction(input_list):
     input_list = np.array(input_list,dtype=object)
